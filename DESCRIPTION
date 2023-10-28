@@ -1,0 +1,44 @@
+Package: GiTIPs2
+Type: Package
+Title: Genetics-informed Target Indication Pairs (GiTIPs2)
+Version: 0.1.0
+Author: Hao He
+Maintainer: Hao He <Hao.He2@sanofi.com>
+Description: GiTIPs2 aims to prioritize causal genes from GWAS by incorporating colocalization, mendelian randomization and annotations.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Imports: 
+    coloc,
+    data.table,
+    doParallel,
+    dplyr,
+    ensemblVEP,
+    foreach,
+    genetics.binaRies (>= 0.1.1),
+    gwasglue (>= 0.0.0.9000),
+    gwasvcf (>= 0.1.1),
+    ieugwasr (>= 0.1.5),
+    magrittr,
+    methods,
+    MungeSumstats,
+    parallel,
+    purrr,
+    readr,
+    SNPlocs.Hsapiens.dbSNP155.GRCh37,
+    SNPlocs.Hsapiens.dbSNP155.GRCh38,
+    stats,
+    stringr,
+    tibble,
+    tidyr,
+    TwoSampleMR (>= 0.5.7),
+    utils,
+    VariantAnnotation,
+    vroom
+Remotes:  
+    mrcieu/gwasvcf,
+    mrcieu/gwasglue,
+    mrcieu/ieugwasr,
+    mrcieu/TwoSampleMR,
+    mrcieu/genetics.binaRies
